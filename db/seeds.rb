@@ -9,42 +9,49 @@ restaurants_attributes = [
     address: 'grand place',
     phone_number: '0320202020',
     category: 'french',
-    review: 0
+    review: 0,
+    photo_url: 'https://unsplash.it/200/300'
   },
   {
     name: 'chico',
     address: 'Place Rihour',
     phone_number: '0320222020',
     category: 'french',
-    review: 0
+    review: 0,
+    photo_url: 'https://unsplash.it/200/300',
+
   },
   {
     name: 'part des anges',
     address: 'grand place',
     phone_number: '0324202020',
     category: 'french',
-    review: 0
+    review: 0,
+    photo_url: 'https://unsplash.it/200/300'
   },
   {
     name: 'papa rafaele',
     address: 'rue de gand',
     phone_number: '0320222020',
     category: 'italian',
-    review: 0
+    review: 0,
+    photo_url: 'https://unsplash.it/200/300'
   },
   {
     name: 'Leon Bruxelles',
     address: 'zone commerciale',
     phone_number: '0320402020',
     category: 'belgian',
-    review: 0
+    review: 0,
+    photo_url: 'https://unsplash.it/200/300'
 },
 {
   name: 'shushi shop',
   address: 'grand place',
   phone_number: '0320202120',
   category: 'japanese',
-  review: 0
+  review: 0,
+  photo_url: 'https://unsplash.it/200/300'
 },
 
 

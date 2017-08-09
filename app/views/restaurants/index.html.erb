@@ -1,10 +1,15 @@
 
-<h1>Here are the restaurants</h1>
+<h1>Best restaurants in Town</h1>
 
-<% @restaurants.each do |restaurant| %>
-  <h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
-  <p>Retaurant adress : <%= restaurant.address %></p>
-  <p>Phone number : <%= restaurant.phone_number %>
-  Food category : <%= restaurant.category %></p>
-  <p> Rated <%= restaurant.reviews.count %> times </p>
-<% end %>
+<div class="container">
+  <div class="row">
+
+    <% @restaurants.each do |restaurant| %>
+      <div class="col-xs-12 col-sm-4">
+        <%= render 'shared/card', restaurant: restaurant %>
+      </div>
+    <% end %>
+
+  </div>
+</div>
+

@@ -1,21 +1,24 @@
-<h1> <%= @restaurant.name %> </h1>
-<p> <%= @restaurant.address %> </p>
-<p> <%= @restaurant.phone_number %> </p>
-<p> <%= @restaurant.category %> </p>
+<div class="restaurant_details">
+  <h1> <%= @restaurant.name %> </h1>
+  <p> Adress : <%= @restaurant.address %> </p>
+  <p> Phone number : <%= @restaurant.phone_number %> </p>
+  <p> Cuisine : <%= @restaurant.category %> </p>
+</div>
 
-<h3>Reviews for <%= @restaurant.name %> </h3>
+<div class="restaurant_reviews">
+  <h3>Reviews for <%= @restaurant.name %> </h3>
 
-<ul>
-    <% @restaurant.reviews.each do |review| %>
-  <li>
-    <%= review.content %>
-    <%= review.rating %>
-  </li>
-    <% end %>
+  <ul>
+      <% @restaurant.reviews.each do |review| %>
+    <li>
+      <p>Experience : <%= review.content %></p>
+      <p>Rate : <%= review.rating %> / 5</p>
+    </li>
+      <% end %>
+  </ul>
+</div>
 
-</ul>
 
 
-
-<%= link_to 'Let a review to this restaurant', new_restaurant_review_path(@restaurant) %>
+<%= link_to "Let a review to #{@restaurant.name}", new_restaurant_review_path(@restaurant), class: 'btn btn-success' %>
 

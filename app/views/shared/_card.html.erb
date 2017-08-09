@@ -1,0 +1,11 @@
+<%= link_to restaurant_path(restaurant) do %>
+  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/200/300');">
+    <div class="card-description">
+      <h2> <%= restaurant.name %></h2>
+      <p> <%= restaurant.category %></p>
+    </div>
+  </div>
+<% end %>
+
+
+

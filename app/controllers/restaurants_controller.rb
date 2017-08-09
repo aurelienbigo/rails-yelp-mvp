@@ -18,8 +18,6 @@ class RestaurantsController < ApplicationController
     else
       render :new
     end
-
-    redirect_to restaurant_path(@restaurant)
   end
 
   def restaurant_params
